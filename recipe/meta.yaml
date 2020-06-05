@@ -1,4 +1,4 @@
-{% set version = "0.1.7.0" %}
+{% set version = "0.1.8.0" %}
 
 package:
   name: pyvis
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/pyvis/pyvis-{{ version }}.tar.gz
-  sha256: 81cb2bba9d1778152ac9e966615d62a02cea304dd9c99d619fe57a0e48c9e40a
+  sha256: 6935b0d26f77198c884a58786b1498c2f6bf77ca755dce9855c60db93239f26e
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -26,13 +26,17 @@ requirements:
 test:
   imports:
     - pyvis
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/WestHealth/pyvis
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE_BSD.txt
-  summary: "A Python network visualization library"
+  summary: A Python network visualization library
 
 extra:
   recipe-maintainers:
