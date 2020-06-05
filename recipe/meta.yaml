@@ -26,6 +26,10 @@ requirements:
 test:
   imports:
     - pyvis
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/WestHealth/pyvis
