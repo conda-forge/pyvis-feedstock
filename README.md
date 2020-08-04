@@ -5,7 +5,7 @@ Home: https://github.com/WestHealth/pyvis
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: A Python network visualization library
 
