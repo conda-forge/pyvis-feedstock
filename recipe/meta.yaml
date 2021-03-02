@@ -1,4 +1,4 @@
-{% set version = "0.1.8.2" %}
+{% set version = "0.1.9" %}
 
 package:
   name: pyvis
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/pyvis/pyvis-{{ version }}.tar.gz
-  sha256: 191b881613fa22dc1a008140ca5990f4c72a69fd8ac80efc1e89ca5e08b1b04d
+  sha256: f9ea603025f31f02155760be638e6c443d992050a2e6942496fbba0586170cbf
 
 build:
   number: 0
