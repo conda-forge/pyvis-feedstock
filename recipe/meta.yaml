@@ -1,11 +1,13 @@
+{% set name = "pyvis" %}
 {% set version = "0.1.9" %}
 
+
 package:
-  name: pyvis
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/p/pyvis/pyvis-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyvis-{{ version }}.tar.gz
   sha256: f9ea603025f31f02155760be638e6c443d992050a2e6942496fbba0586170cbf
 
 build:
@@ -15,14 +17,14 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
   run:
-    - python
+    - python >=3.6
     - ipython >=5.3.0
     - jinja2 >=2.9.6
+    - jsonpickle >=1.4.1
     - networkx >=1.11
-    - jsonpickle
 
 test:
   imports:
