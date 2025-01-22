@@ -1,5 +1,5 @@
 {% set name = "pyvis" %}
-{% set version = "0.3.1" %}
+{% set version = "0.3.2" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyvis-{{ version }}.tar.gz
-  sha256: aa817caac54afc9a4df38ada6f46636b842a8bd57197bb6aca5084699da04307
+  url: https://github.com/WestHealth/pyvis/archive/refs/tags/v{{ version }}.tar.gz
+  sha256: ff947e224d9825e4b0f3d6710075945c5c8d13bf60aa54e6396c996f34851a3a
 
 build:
   number: 1
