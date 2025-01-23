@@ -1,5 +1,5 @@
 {% set name = "pyvis" %}
-{% set version = "0.3.2" %}
+{% set version = "2022-04-13" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://github.com/WestHealth/pyvis/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: ff947e224d9825e4b0f3d6710075945c5c8d13bf60aa54e6396c996f34851a3a
+  sha256: e5b99b043c3989564ea9106c3a74762131998d2e4bbcd489859a860c810ba062
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
